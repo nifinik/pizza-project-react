@@ -20,6 +20,7 @@ function App() {
             {pizzas.map((obj) => {
               return (
                 <PizzaBlock
+                  key={obj.id}
                   // {...obj} Можно сделать вот так она перебирает все своиства в обьекте pizzas но имена своиства должны быть схожими как на обьекте
                   title={obj.title}
                   price={obj.price}
